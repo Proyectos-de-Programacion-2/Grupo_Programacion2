@@ -6,7 +6,7 @@
 
 ## Estructura del repositorio
 
-'''
+```
 labs/
   lab0/
     integrante1.py
@@ -14,4 +14,4 @@ labs/
 
 tareas/
   tarea0/
-'''
+```
