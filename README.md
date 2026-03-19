@@ -14,7 +14,7 @@ Clase de Practica/
         ejercicio2.py
         ejercicio3.py
         ejercicio4.py
-   Guia de Clases 2/
+    Guia de Clases 2/
         ejercicio1.py
         ejercicio2.py
         ejercicio3.py
