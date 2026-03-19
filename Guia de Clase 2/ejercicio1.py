@@ -3,7 +3,6 @@
 
 import random
 voltajes = [round(random.uniform(10.0, 12.0), 1) for _ in range(10)]
-#lista = [round(random.uniform(inicio, final), cant_de_decimales) for _ in range(cant_de_numero)]
 
 def analizar_voltajes(lista_voltajes):
     """
@@ -14,33 +13,26 @@ def analizar_voltajes(lista_voltajes):
     - cantidad de mediciones bajo 12.0 V
     """
 
-    # Suponemos que el primer valor es inicialmente el máximo y el mínimo
     maximo = lista_voltajes[0]
     minimo = lista_voltajes[0]
 
     suma = 0
     cantidad_bajo_12 = 0
 
-    # Recorremos toda la lista
     for voltaje in lista_voltajes:
         suma += voltaje
 
-        # Verificamos si es mayor que el máximo actual
         if voltaje > maximo:
             maximo = voltaje
 
-        # Verificamos si es menor que el mínimo actual
         if voltaje < minimo:
             minimo = voltaje
 
-        # Contamos cuántas mediciones están bajo 12.0 V
         if voltaje < 12.0:
             cantidad_bajo_12 += 1
 
-    # Calculamos el promedio
     promedio = suma / len(lista_voltajes)
 
-    # Retornamos todos los resultados
     return maximo, minimo, promedio, cantidad_bajo_12
 
 
@@ -57,10 +49,8 @@ def estado_bateria(promedio):
         return "Batería crítica"
 
 
-# Llamamos a la función principal de análisis
 v_max, v_min, v_prom, bajo_12 = analizar_voltajes(voltajes)
 
-# Determinamos el estado de la batería
 estado = estado_bateria(v_prom)
 
 # Mostramos los resultados
