@@ -8,16 +8,25 @@
 ## Estructura del repositorio
 
 ```
-labs/
-  lab0/
-    integrante1.py
-    integrante2.py
-    integrante3.py
-  lab1/
-     ejercicio1.py
-     ejercicio2.py
-     ejercicio3.py
+Clase de Practica/
+    Guia de Clases 1/
+        ejercicio1.py
+        ejercicio2.py
+        ejercicio3.py
+        ejercicio4.py
+   Guia de Clases 2/
+        ejercicio1.py
+        ejercicio2.py
+        ejercicio3.py
+        ejercicio4.py
 
-tareas/
-  tarea0/
+labs/
+    lab0/
+        integrante1.py
+        integrante2.py
+        integrante3.py
+    lab1/
+        ejercicio1.py
+        ejercicio2.py
+        ejercicio3.py
 ```
