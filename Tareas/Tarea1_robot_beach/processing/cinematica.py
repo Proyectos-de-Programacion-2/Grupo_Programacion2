@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def calcular_movimiento(x, y, theta, v, omega, dt=0.1):
     # Saturación de velocidades
     v = np.clip(v, -0.8, 0.8)
