@@ -4,6 +4,7 @@
 - Elias Mendoza
 - Jaime Mansilla
 - Juan Rodriguez
+- Javier Huerta
 
 ## Estructura del repositorio
 
