@@ -12,7 +12,7 @@ class RobotBase:
         self.__basura_recolectada = 0.0
         self.__step_dt = 0.1
 
-        self.target_X = 5.0
+        self.target_x = 5.0
         self.target_y = 5.0
 
         #Getters correspondientes
