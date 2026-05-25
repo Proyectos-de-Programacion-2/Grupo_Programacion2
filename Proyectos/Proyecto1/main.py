@@ -4,6 +4,7 @@
 from modelos_robot import RobotTresRuedas, RobotOruga, RobotDron
 from robot_base import RobotBase
 import analisis
+print("Ruta de analisis:", analisis.__file__)
 import visualizacion
 import math
 
