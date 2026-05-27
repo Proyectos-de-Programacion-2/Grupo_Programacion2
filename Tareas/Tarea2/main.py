@@ -21,7 +21,7 @@ def main():
         delantero("Cristiano Ronaldo", 41, 1.87, 7, goles=28, tiros_al_arco=161),
     ]
 
-    # ── Acciones en la cancha ──────────────────────────────
+    # Acciones en la cancha 
     print("\n--- ACCIONES EN LA CANCHA ---")
     for j in jugadores_titulares:
         j.correr()
@@ -30,7 +30,7 @@ def main():
     jugadores_titulares[5].dar_pase()
     jugadores_titulares[9].patear_al_arco()
 
-    # ── Roles del equipo (polimorfismo) ────────────────────
+    # Roles del equipo (polimorfismo) 
     print("\n--- ROLES DEL EQUIPO ---")
     roles = {portero: "Portero", defensa: "Defensa",
              mediocampista: "Mediocampista", delantero: "Delantero"}
