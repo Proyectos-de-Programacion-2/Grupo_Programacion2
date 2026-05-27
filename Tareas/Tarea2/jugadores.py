@@ -35,7 +35,7 @@ class portero(jugador):
         print(f"{self.nombre} realiza un saque de arco.")
 
     def mostrar_rol(self):
-        print("Portero")
+        return "Portero"
 
 # Clase hija 2
 class defensa(jugador):
@@ -52,7 +52,7 @@ class defensa(jugador):
         print(f"{self.nombre} realiza una barrida al rival.")
 
     def mostrar_rol(self):
-        print("Defensa")
+        return "Defensa"
 
 # Clase hija 3
 class mediocampista(jugador):
@@ -69,7 +69,7 @@ class mediocampista(jugador):
         print(f"{self.nombre} asegura la posesion del balon.")
 
     def mostrar_rol(self):
-        print("Mediocampista")
+        return "Mediocampista"
 
 #Clase hija 4
 class delantero(jugador):
@@ -86,4 +86,4 @@ class delantero(jugador):
         print(f"{self.nombre} salta al balon elevado y cabecea.")
 
     def mostrar_rol(self):
-        print("Delantero")
+        return "Delantero" 
