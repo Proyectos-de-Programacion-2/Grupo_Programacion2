@@ -13,7 +13,7 @@ def main():
         defensa("Rúben Diaz", 29, 1.87, 3, balones_recuperados=189, despejes=140),
         defensa("Gonçalo Inácio", 24, 1.86, 14, balones_recuperados=147, despejes=98),
         defensa("Nuno Mendez", 23, 1.80, 25, balones_recuperados=195, despejes=176),
-        mediocampista("João Neves", 21, 1,74, 15, asistencias=8, pases_efectivos=950),
+        mediocampista("João Neves", 21, 1.74, 15, asistencias=8, pases_efectivos=950),
         mediocampista("Vitinha", 26, 1.72, 23, asistencias=7, pases_efectivos=2572),
         mediocampista("Bruno Fernandes", 31, 1.79, 8, asistencias=21, pases_efectivos=1639),
         mediocampista("Bernardo Silva", 31, 1.73, 10, asistencias=4, pases_efectivos=1989),
