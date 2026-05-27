@@ -12,7 +12,7 @@ class jugador:
         print(f"{self.nombre} esta corriendo.")
 
     def mostrar_rol(self):
-        print("Soy un jugador de la seleccion de Portuguesa.")
+        return "Soy un jugador de la seleccion de Portuguesa."
 
     def celebrar(self):
         print(f"{self.nombre} celebra un gol.")
