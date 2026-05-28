@@ -30,15 +30,44 @@ def main():
     jugadores_titulares[5].dar_pase()
     jugadores_titulares[9].patear_al_arco()
 
-    # Roles del equipo (polimorfismo) 
+    # Roles del equipo (Polimorfismo)
     print("\n--- ROLES DEL EQUIPO ---")
-    roles = {portero: "Portero", defensa: "Defensa",
-             mediocampista: "Mediocampista", delantero: "Delantero"}
     for j in jugadores_titulares:
-        print(f"{j.nombre} - {roles[type(j)]}")  # ← fix: mostrar_rol() hace print, no return
+        # Se llama directamente al método mostrar_rol() de cada objeto
+        print(f"{j.nombre} - {j.mostrar_rol()}") 
 
+    # Creación de lista de diccionarios para Pandas
+    datos_equipo = []
+    for j in jugadores_titulares:
+        datos_equipo.append({
+            "Pais": pais,
+            "Dorsal": j.dorsal,
+            "Nombre": j.nombre,
+            "Edad": j.edad,
+            "Altura_m": j.altura,
+            "Posicion": j.mostrar_rol()
+        })
+
+    # Creación del DataFrame
+    df = pd.DataFrame(datos_equipo)
+
+    print("\n--- ANÁLISIS DE PANDAS ---")
+    print("\n1. Tabla completa del equipo:")
+    print(df.to_string(index=False))
+    print(f"\n2. Edad promedio del equipo: {df['Edad'].mean():.1f} años")
+    print(f"3. Altura máxima del equipo: {df['Altura_m'].max()} m")
+    print("\n4. Cantidad de jugadores por posición:")
+    print(df['Posicion'].value_counts().to_string())
+    print("\n5. Promedio de edad por posición:")
+    print(df.groupby('Posicion')['Edad'].mean().to_string())
+
+    # Exportación archivo CSV
+    if not os.path.exists('output'):
+        os.makedirs('output')
+        
+    ruta_archivo = 'output/titulares_portugal.csv'
+    df.to_csv(ruta_archivo, index=False)
+    print(f"\nArchivo exportado exitosamente a: {ruta_archivo}")
 
 if __name__ == "__main__":
     main()
-
-    print()
