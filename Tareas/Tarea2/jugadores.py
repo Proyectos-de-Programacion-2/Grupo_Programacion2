@@ -86,4 +86,4 @@ class delantero(jugador):
         print(f"{self.nombre} salta al balon elevado y cabecea.")
 
     def mostrar_rol(self):
-        return "Delantero" 
+        return "Delantero"
