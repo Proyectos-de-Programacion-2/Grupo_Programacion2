@@ -9,16 +9,16 @@ class jugador:
         self.dorsal = dorsal
 
     def correr(self):
-        print(f"{self.nombre} esta corriendo.")
+        return f"{self.nombre} esta corriendo."
 
     def mostrar_rol(self):
         return "Soy un jugador de la seleccion de Portuguesa."
 
     def celebrar(self):
-        print(f"{self.nombre} celebra un gol.")
+        return f"{self.nombre} celebra un gol."
     
     def reclamo(self):
-        print(f"{self.nombre} se acerca al arbitro y le reclama el penal cobrado.")
+        return f"{self.nombre} se acerca al arbitro y le reclama el penal cobrado."
 
 # Clase hija 1    
 class portero(jugador):
@@ -29,10 +29,10 @@ class portero(jugador):
         self.apariciones = apariciones
 
     def atajar(self):
-        print(f"{self.nombre} ataja el tiro del rival.")
+        return f"{self.nombre} ataja el tiro del rival."
 
     def saque_de_arco(self):
-        print(f"{self.nombre} realiza un saque de arco.")
+        return f"{self.nombre} realiza un saque de arco."
 
     def mostrar_rol(self):
         return "Portero"
@@ -46,10 +46,10 @@ class defensa(jugador):
         self.despejes = despejes
 
     def marcar(self):
-        print(f"{self.nombre} está marcando al delantero rival.")
+        return f"{self.nombre} está marcando al delantero rival."
 
     def barrida(self):
-        print(f"{self.nombre} realiza una barrida al rival.")
+        return f"{self.nombre} realiza una barrida al rival."
 
     def mostrar_rol(self):
         return "Defensa"
@@ -63,10 +63,10 @@ class mediocampista(jugador):
         self.pases_efectivos = pases_efectivos
 
     def dar_pase(self):
-        print(f"{self.nombre} da un pase filtrado perfecto.")
+        return f"{self.nombre} da un pase filtrado perfecto."
 
     def posesion(self):
-        print(f"{self.nombre} asegura la posesion del balon.")
+        return f"{self.nombre} asegura la posesion del balon."
 
     def mostrar_rol(self):
         return "Mediocampista"
@@ -80,10 +80,10 @@ class delantero(jugador):
         self.tiros_al_arco = tiros_al_arco
 
     def patear_al_arco(self):
-        print(f"{self.nombre} patea el balon hacia el arco rival.")
+        return f"{self.nombre} patea el balon hacia el arco rival."
 
     def cabecear(self):
-        print(f"{self.nombre} salta al balon elevado y cabecea.")
+        return f"{self.nombre} salta al balon elevado y cabecea."
 
     def mostrar_rol(self):
         return "Delantero"

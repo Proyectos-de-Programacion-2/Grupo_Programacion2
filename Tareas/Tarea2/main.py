@@ -24,11 +24,11 @@ def main():
     # Acciones en la cancha 
     print("\n--- ACCIONES EN LA CANCHA ---")
     for j in jugadores_titulares:
-        j.correr()
-    jugadores_titulares[0].atajar()
-    jugadores_titulares[1].marcar()
-    jugadores_titulares[5].dar_pase()
-    jugadores_titulares[9].patear_al_arco()
+        print(j.correr())
+    print(jugadores_titulares[0].atajar())
+    print(jugadores_titulares[1].marcar())
+    print(jugadores_titulares[5].dar_pase())
+    print(jugadores_titulares[9].patear_al_arco())
 
     # Roles del equipo (Polimorfismo)
     print("\n--- ROLES DEL EQUIPO ---")
